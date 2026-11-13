@@ -1,0 +1,11 @@
+{
+    "nome": "Maria da Silva",
+    "idade": 25,
+    "front-end": ["HTML","CSS","Javascript","React"],
+    "back-end": ["PHP","Java","C#"],
+    "endereço": {
+        "rua": "Quadros Sobrinho, 01",
+        "bairro": "Centro",
+        "cidade": "São Paulo"
+    }
+}

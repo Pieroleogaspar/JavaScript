@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação da Moeda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        #loading {
+            font-style: italic;
+            color: #666;
+        }
+
+        #lista-moedas {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .moeda-item {
+            background-color: #e9ecef;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .moeda-item:hover {
+            transform: scale(1.02);
+        }
+
+        .moeda-item span.simbolo {
+            font-weight: bold;
+            color: #007bff;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo-moeda">Cotação da Moeda</h1>
+        <div id="loading-cotacao">Carregando cotação...</div>
+        <div id="cotacao-info" class="cotacao-container">
+            </div>
+        <p><a href="index.html">Voltar para a lista de moedas</a></p>
+    </div>
+    <script src="js/cotacao.js"></script>
+</body>
+</html>
